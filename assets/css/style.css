@@ -7250,11 +7250,77 @@ del {
 	  color: grey;
   }
 
-  .section-scooter-features {
+  .background-scooter-feature {
 	  background-image: url("../img/links/_64A9473-33.jpg");
 	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center center;
+	  height: 800px;
   }
 
   .white {
 	  color: white;
   }
+
+  .section-second-features-container {
+	  background-color: black;
+
+  }
+
+  .section-second-features-container p {
+	font-size: 12px;
+	color: white;
+}
+
+.section-second-features-container h1 {
+	color: orangered;
+}
+.section-second-features-container h6 {
+	color: orangered;
+}
+
+.section-play .play {
+	background-color: black;
+}
+
+.section-play p {
+	font-size: 12px;
+	color: white;
+}
+
+.section-play h1 {
+	color: orangered;
+}
+.section-play h6 {
+	color: orangered;
+}
+.border-feature {
+	margin-top: 24px;
+    height: 70px;
+    border: 1px solid orangered;
+        -webkit-transform:
+            translateY(-20px)
+            translateX(-10px)
+            rotate(10deg); 
+}
+
+.row-section-play {
+	flex-flow: wrap-reverse;
+}
+
+.section-play {
+	margin-top: 20px;
+}
+
+.background-scooter {
+	background-image: url("../img/links/scooter-section.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 800px;
+}
+
+.gray {
+	color: gray;
+	width: 400px;
+}
