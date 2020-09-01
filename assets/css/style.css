@@ -138,7 +138,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Sen", sans-serif;
+	font-family: inherit;
 	color: white;
 	margin-top: 0px;
 	font-style: normal;
