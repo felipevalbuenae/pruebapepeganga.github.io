@@ -422,7 +422,7 @@ hr {
 	top: 0;
 	width: 101%;
 	height: 101%;
-	background: #3e44ec;
+	background: black;
 	z-index: 1;
 	border-radius: 5px;
 	transition: transform 0.5s;
@@ -3743,7 +3743,7 @@ hr {
 	border-radius: 50%;
 	cursor: pointer;
 	background: none;
-	color: #96989a;
+	color: white;
 	font-size: 20px;
 	-webkit-transition: .4s;
 	-o-transition: .4s;
@@ -3794,7 +3794,8 @@ hr {
 }
 
 .h1-testimonial-active:hover button {
-	background: #f84e2b;
+	background: transparent;
+	border: 1px solid;
 	color: #fff
 }
 
@@ -7083,16 +7084,48 @@ del {
 		right: -50px;
 	}
 
+	.gray {
+		margin-left: 50px;
+	}
+
+	.desplegable {
+		margin-top: 330px;
+	}
+	.section-text-scooter-2 {
+		display: none;
+		visibility: hidden;
+	}
 }
 @media (max-width: 1700px) {
+	.section-text-scooter-2 {
+		height: 200px;
+		width: 100%;
+	}
+	.display {
+		padding-left: 20px;
+		display: contents;
+	}
 	.slider-height {
 		background-image: url(../img/links/Mi-Electric-Scooter-cover-photo-v2.jpg);
 	min-height: 670px;
 	background-repeat: no-repeat;
 	background-position: 73%;
 	background-size: cover;
-    }
-        
+	}
+
+	.invisible-section-feature {
+		margin-top: 270px;
+	}
+	
+	.text-absolute {
+		display: none;
+		visibility: hidden;
+	}
+	
+	.section-bg-scooter {
+		margin-top: 200px;
+	}
+	
     .title {
         /*border-bottom-style: groove;*/
         text-decoration-line: underline;
@@ -7145,6 +7178,33 @@ del {
 	
 	  .app {
 		right: 70px;
+	}
+
+	.gray {
+		margin-left: 20px;
+	}
+	.invisible-div {
+		display: none;
+		visibility: hidden;
+	}
+
+	.section-text .absolute {
+		position: absolute;
+		text-align: center;
+	}
+
+	.section-text .relative {
+		position: relative;
+		text-align: center;
+	}
+
+	.invisible-scooter-content {
+		display: none;
+		visibility: hidden;
+	}
+
+	.battery {
+		inline-size: max-content;
 	}
 }
 
@@ -7323,4 +7383,30 @@ del {
 .gray {
 	color: gray;
 	width: 400px;
+}
+
+.section-images p {
+	color: white;
+}
+
+.background-img-scooter {
+	background-image: url("../img/links/mi\ scoote\ negra\ plegada.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 800px;
+}
+
+
+.section-text {
+	height: 200px;
+    position: absolute;
+    width: 100%;
+}
+
+.section-text-scooter {
+	height: 200px;
+    position: absolute;
+    width: 100%;
+	transform: translate(0%, 360%);
 }
