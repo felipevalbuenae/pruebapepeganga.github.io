@@ -3,17 +3,31 @@
         <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9 col-md-9">
                 <div class="h1-testimonial-active">
-                
                     <!-- Single Testimonial -->
-                    <div *ngFor="let user of dataUsers;"  class="single-testimonial pt-65">
+                    <div class="single-testimonial pt-65">
                         <!-- Testimonial tittle -->
                         <div class="testimonial-icon mb-45">
-                            <img src="{{user.picture}}" class="ani-btn img-fluid" alt="" style="width: 400px;">
+                            <img src="assets/img/links/iStock-1086958922.png" class="ani-btn img-fluid" alt="" style="width: 400px;">
                         </div>
                             <!-- Testimonial Content -->
                         <div class="testimonial-caption text-center">
                             <h1 style="font-size: 4.5rem;
-                            border-bottom-style: solid;">Andres Rojas</h1>
+                            border-bottom-style: solid;">{{tittle}}</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            <!-- Rattion -->
+                        </div>
+                    </div>
+                    <!-- Single Testimonial -->
+                    <div *ngFor="let user of dataUsers"  class="single-testimonial pt-65">
+                        <!-- Testimonial tittle -->
+                        <div class="testimonial-icon mb-45">
+                            <img [src]="user.picture" class="ani-btn img-fluid" alt="" style="width: 400px;">
+                        </div>
+                            <!-- Testimonial Content -->
+                        <div class="testimonial-caption text-center">
+                            <h1 style="font-size: 4.5rem;
+                            border-bottom-style: solid;">{{user.lastName}}</h1>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                             <!-- Rattion -->

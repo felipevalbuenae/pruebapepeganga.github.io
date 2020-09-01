@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DynamicScriptLoaderServiceService } from './services/dynamic-script-loader-service.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'pruebapepeganga';
 
-  ngOnInit(): void {
-    
+ constructor( public dynamicScriptLoader: DynamicScriptLoaderServiceService) {
+   }
+
+  ngOnInit() {
+
   }
+
 }

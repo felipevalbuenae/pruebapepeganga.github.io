@@ -22,6 +22,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { LadingPageComponent } from './pages/lading-page/lading-page.component';
 import { UsersPageComponent } from './pages/users-page/users-page.component';
+import { PostsPageComponent } from './pages/posts-page/posts-page.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { UsersPageComponent } from './pages/users-page/users-page.component';
     SectionCarrusellComponent,
     LadingPageComponent,
     UsersPageComponent,
+    PostsPageComponent,
   
   ],
   imports: [

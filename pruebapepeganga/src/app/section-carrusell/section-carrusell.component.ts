@@ -9,21 +9,21 @@ import { DataService } from '../services/data.service';
 })
 export class SectionCarrusellComponent implements OnInit {
 
-  title:String = "hola";
+  tittle:String = "Andres Rojas";
   dataUsers:any;
 
   constructor(private dynamicScriptLoader: DynamicScriptLoaderServiceService, private data: DataService) {
-    this.loadScripts();
+    
     this.data.getUsers().subscribe(res => {
       this.dataUsers = res["data"];
-      console.log(this.dataUsers)
+      console.log(this.dataUsers);
+      this.loadScripts();
   })
   
    console.log(this.dataUsers);
    }
 
   ngOnInit() {
-
   }
   private loadScripts() {
     // You can load multiple scripts by just providing the key as argument into load method of the service

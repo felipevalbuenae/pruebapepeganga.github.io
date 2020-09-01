@@ -3,21 +3,21 @@ import { DataService } from 'src/app/services/data.service';
 import * as XLSX from 'xlsx';
 
 @Component({
-  selector: 'app-users-page',
-  templateUrl: './users-page.component.html',
-  styleUrls: ['./users-page.component.css']
+  selector: 'app-posts-page',
+  templateUrl: './posts-page.component.html',
+  styleUrls: ['./posts-page.component.css']
 })
-export class UsersPageComponent implements OnInit {
-  dataUsers:any;
+export class PostsPageComponent implements OnInit {
+  dataPosts:any;
   fileName= 'ExcelSheet.xlsx';
 
   constructor(private data: DataService) {
-    this.data.getUsers2().subscribe(res => {
-      this.dataUsers = res;
-      console.log(this.dataUsers);
+    this.data.getPosts().subscribe(res => {
+      this.dataPosts = res;
+      console.log(this.dataPosts);
   })
   
-   console.log(this.dataUsers);
+   console.log(this.dataPosts);
    }
 
   ngOnInit(): void {
